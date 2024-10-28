@@ -11,7 +11,7 @@ def init_llm():
 llm = init_llm()
 
 def generateQuestion(content):
-    message = HumanMessage(content=f"Crie uma questão para ensino fundamental com o conteúdo de {content}.")
+    message = HumanMessage(content=f"Crie uma questão para ensino extremamente basico com o conteúdo de {content}.")
     resposta = llm.invoke([message])
     
     return resposta.content
